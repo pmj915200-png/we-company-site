@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="위컴퍼니(WE COMPANY) | 동대문 여성복 사입대행, 외주 공장 생산, 해외 수출 납품 / 東大門レディースウェア仕入れ代行・OEM・輸出">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>위컴퍼니 WE COMPANY</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap">
+<style id="site-css">
+/* Layout: showroom index. A fixed left column (logo, comma nav, language) ruled off by one black line; the right column runs full-width photos and quiet text rows. Single light look: greige paper, black ink. */
+:root{
+  color-scheme:light;
+  --bg:#e8e8e0; --panel:#f5f2ea; --ink:#111110; --muted:#6b6b64; --soft:#a3a39b; --hair:#cbcbc2; --dark:#1b1b19; --on-dark:#e8e8e0; --alert:#a22525;
+  --f-logo:"Barlow Condensed","Arial Narrow",sans-serif;
+  --f-latin:"DM Sans",Helvetica,Arial,sans-serif;
+  --f-ko:"DM Sans","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-ja:"DM Sans","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ko);font-weight:300;font-size:14px;line-height:1.75;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
+html[lang="ko"] body{word-break:keep-all}
+html[lang="ja"] body{font-family:var(--f-ja);line-break:strict}
+a{color:inherit}
+button,input,textarea{font:inherit;color:inherit;letter-spacing:inherit}
+button{cursor:pointer}
+:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
+p,h1,h2,h3,ul,ol,dl,dd,figure{margin:0}
+h1,h2,h3{font-weight:400;text-wrap:balance}
+.en{font-family:var(--f-latin);text-transform:uppercase;letter-spacing:.04em}
+.link{background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;font-size:12px;font-family:var(--f-latin);text-transform:uppercase;letter-spacing:.04em}
+.link:hover{color:var(--muted)}
+
+/* frame */
+.frame{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:0 34px;padding-right:max(20px,env(safe-area-inset-right,0px));padding-left:max(30px,env(safe-area-inset-left,0px))}
+.side{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;height:calc(100vh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));padding-block:30px;padding-right:30px;border-right:1px solid var(--ink);display:flex;flex-direction:column;gap:22px}
+.logo{display:block;font-family:var(--f-logo);font-weight:400;font-size:34px;line-height:1;letter-spacing:.01em;text-transform:uppercase;text-decoration:none;background:none;border:0;padding:0;text-align:left}
+.logo small{display:block;margin-top:8px;font-family:inherit;font-size:13px;letter-spacing:.02em;text-transform:none;color:var(--muted)}
+html[lang="ko"] .logo small{font-family:var(--f-ko)}
+html[lang="ja"] .logo small{font-family:var(--f-ja)}
+.menus{display:flex;gap:6px 20px;flex-wrap:wrap;font-family:var(--f-latin);font-size:14px;font-weight:400}
+.menus nav{display:flex;flex-wrap:wrap}
+.menus button{background:none;border:0;padding:0;font-weight:400}
+.menus button:hover{text-decoration:underline;text-underline-offset:3px}
+.menus nav button:not(:last-child)::after{content:",\00a0"}
+.lang button{color:var(--soft)}
+.lang button[aria-pressed="true"]{color:var(--ink)}
+.side-foot{margin-top:auto;display:grid;gap:14px;font-size:12px;color:var(--muted)}
+.side-foot b{display:block;font-weight:400;color:var(--ink);font-size:13px}
+
+.main{min-width:0;padding-block:0 60px}
+
+/* hero */
+.hero{display:block}
+.hero-media{position:relative;width:100%;max-width:100%;aspect-ratio:16/10;background:var(--dark);overflow:hidden}
+.hero-media img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-type{position:absolute;inset:0;padding:clamp(20px,4vw,48px);display:flex;flex-direction:column;justify-content:space-between;color:var(--on-dark)}
+.hero-type .big{font-family:var(--f-logo);text-transform:uppercase;font-size:clamp(40px,7.4vw,112px);line-height:.92;letter-spacing:-.005em}
+.hero-type .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:var(--f-latin);font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.8}
+.hero-text{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 34px;padding-block:34px 0}
+.hero-text h1{font-size:clamp(22px,2.4vw,30px);line-height:1.45;font-weight:300;letter-spacing:-.01em;white-space:pre-line}
+.hero-text .sub{color:var(--muted);max-width:32em;align-self:end}
+.hero-text .acts{grid-column:1/-1;display:flex;gap:24px;flex-wrap:wrap}
+
+/* sections */
+.sec{padding-block:96px 0}
+.sec-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 34px;padding-bottom:22px;border-bottom:1px solid var(--ink);margin-bottom:28px;align-items:end}
+.sec-h .kicker{font-family:var(--f-latin);text-transform:uppercase;font-size:12px;letter-spacing:.06em;color:var(--muted)}
+.sec-h h2{font-size:20px;line-height:1.4;margin-top:4px}
+.sec-h p{color:var(--muted);max-width:36em}
+
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 34px;align-items:start}
+.intro{font-size:15px;white-space:pre-line;max-width:34em}
+.list{list-style:none;padding:0;border-top:1px solid var(--hair)}
+.list li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:10px;padding:14px 0;border-bottom:1px solid var(--hair)}
+.list .n{font-family:var(--f-latin);font-size:12px;color:var(--soft);padding-top:2px;font-variant-numeric:tabular-nums}
+.list b{display:block;font-weight:400}
+.list span{display:block;color:var(--muted);font-size:13px}
+
+.notice{margin-top:34px;background:var(--panel);border:1px solid var(--soft);padding:24px 26px;display:grid;gap:10px;max-width:440px}
+.notice .t{font-family:var(--f-latin);text-transform:uppercase;font-size:13px;letter-spacing:.04em}
+.notice .d{font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+.notice .acts{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-top:12px}
+
+.steps{list-style:none;padding:0;border-top:1px solid var(--hair)}
+.steps li{display:grid;grid-template-columns:40px minmax(0,1fr) minmax(0,1.3fr);gap:10px 34px;padding:16px 0;border-bottom:1px solid var(--hair)}
+.steps .n{font-family:var(--f-latin);font-size:12px;color:var(--soft);padding-top:2px;font-variant-numeric:tabular-nums}
+.steps b{font-weight:400}
+.steps span{color:var(--muted)}
+.sub-h{font-family:var(--f-latin);text-transform:uppercase;font-size:12px;letter-spacing:.06em;color:var(--muted);margin-bottom:10px}
+.plain{list-style:none;padding:0}
+.plain li{padding:6px 0;border-bottom:1px solid var(--hair)}
+.malls{font-size:15px}
+.malls span:not(:last-child)::after{content:",\00a0"}
+.note{margin-top:10px;font-size:12px;color:var(--muted)}
+
+/* galleries */
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:34px 20px}
+.card{display:flex;flex-direction:column;gap:12px;min-width:0}
+.card .ph{display:block;width:100%;max-width:100%;padding:0;border:0;background:var(--hair);overflow:hidden;cursor:zoom-in}
+.grid.factory .ph{aspect-ratio:4/3}
+.grid.products .ph{aspect-ratio:3/4}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.card .cap{font-size:13px;line-height:1.5;color:var(--muted);overflow-wrap:anywhere}
+.card .cap b{display:block;font-weight:400;color:var(--ink)}
+.card .cty{font-family:var(--f-latin);text-transform:uppercase;font-size:12px;letter-spacing:.04em}
+.empty{padding:56px 0;color:var(--muted);border-bottom:1px solid var(--hair)}
+
+/* contact */
+.rows{border-top:1px solid var(--hair)}
+.rowc{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid var(--hair)}
+.rowc .k{color:var(--muted);font-size:13px}
+.rowc .v{overflow-wrap:anywhere;user-select:all;font-weight:400}
+.rowc .copy{background:none;border:0;padding:0;font-size:11px;font-family:var(--f-latin);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.pending{color:var(--muted);padding:13px 0;border-bottom:1px solid var(--hair)}
+footer{margin-top:96px;padding-top:18px;border-top:1px solid var(--ink);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:var(--f-latin);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+/* editor (Korean UI for the owner) */
+.ed{display:none}
+body.editing .ed{display:flex}
+body.editing .ed-grid{display:grid}
+.ed{gap:10px;flex-wrap:wrap;align-items:end;margin-bottom:24px;padding:16px;border:1px dashed var(--ink);background:var(--panel)}
+.ed label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted);flex:1;min-width:150px}
+.ed input,.ed textarea,.card .tools input{border:1px solid var(--soft);background:#fff;padding:7px 9px;font-size:13px;width:100%;border-radius:0}
+.ed textarea{min-height:130px;resize:vertical}
+.ed-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:28px}
+.ed-grid .full{grid-column:1/-1}
+.ed-grid .head{grid-column:1/-1;font-family:var(--f-latin);text-transform:uppercase;font-size:12px;letter-spacing:.06em;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);padding:8px 14px;font-size:12px;font-family:var(--f-latin);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-radius:0}
+.btn.line{background:transparent;color:var(--ink)}
+.btn.warn{background:transparent;color:var(--alert);border-color:var(--alert)}
+.btn[disabled]{opacity:.45;cursor:default}
+.card .tools{display:none;flex-direction:column;gap:6px}
+body.editing .card .tools{display:flex}
+.card .tools .b{display:flex;gap:6px;flex-wrap:wrap}
+.prog{font-size:12px;color:var(--ink)}
+.adminbar{position:fixed;right:max(16px,calc(env(safe-area-inset-right,0px) + 16px));bottom:calc(env(safe-area-inset-bottom,0px) + 16px);z-index:20;display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100vw - 32px)}
+.adminbar .status{background:var(--panel);border:1px solid var(--soft);padding:7px 12px;font-size:12px}
+.adminbar .btn.line{background:var(--panel)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:30;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:calc(env(safe-area-inset-top,0px) + 56px) max(16px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 24px) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-height:78vh;max-width:100%;object-fit:contain}
+.lb p{font-size:13px;color:var(--muted);text-align:center}
+.lb .x{position:absolute;top:calc(env(safe-area-inset-top,0px) + 18px);right:max(20px,env(safe-area-inset-right,0px));background:none;border:0;font-size:22px;line-height:1}
+
+@media (max-width:1180px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.frame{grid-template-columns:minmax(0,300px) minmax(0,1fr)}}
+@media (max-width:860px){
+  .frame{display:block;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .side{position:static;height:auto;border-right:0;border-bottom:1px solid var(--ink);padding:20px 0 16px;gap:14px;margin-bottom:16px}
+  .side-foot{display:none}
+  .logo{font-size:30px}
+  .hero-media{aspect-ratio:4/5}
+  .hero-text,.sec-h,.two{grid-template-columns:minmax(0,1fr)}
+  .steps li{grid-template-columns:32px minmax(0,1fr);gap:2px 10px}
+  .steps li .n{grid-column:1;grid-row:1/3}
+  .steps li b,.steps li span:not(.n){grid-column:2}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 12px}
+  .sec{padding-block:72px 0}
+  .ed-grid{grid-template-columns:minmax(0,1fr)}
+  .rowc{grid-template-columns:86px minmax(0,1fr) auto}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script type="application/json" id="site-state">__SITE_STATE__</script>
+<script id="app-js">
+(function(){
+  var S = JSON.parse(document.getElementById('site-state').textContent);
+  var removed = [], dirty = false, editing = false, saving = false;
+  var artifact = null, assets = null;
+  var lang = location.hash === '#ja' ? 'ja' : location.hash === '#ko' ? 'ko' : (function(){try{return localStorage.getItem('wc-lang')||'ko';}catch(_){return 'ko';}})();
+
+  var T = {
+    ko:{
+      nav:[['about','About'],['sourcing','Sourcing'],['factory','Factory'],['products','Export'],['contact','Contact']],
+      h1:'동대문 여성복,\n사입부터 생산, 수출까지.',
+      sub:'도매상가 사입대행, 외주 공장 생산, 해외 바이어 납품을 한 창구에서 진행합니다.',
+      ctaContact:'사입 문의하기 →', ctaBrochure:'회사소개서 보기 →',
+      aboutK:'About', aboutH:'회사소개', aboutP:'동대문 시장의 속도와 공장 생산의 안정성을 함께 다룹니다.',
+      biz:[['동대문 여성복 사입대행','도매상가 시장조사, 샘플·본 주문 사입, 미송 관리'],['외주 공장 생산 (OEM)','샘플과 작업지시서 기준의 협력 공장 생산 및 QC'],['검수 · 포장 · 택 작업','수량, 오염, 봉제 불량 확인 후 바이어 요청 포장'],['해외 수출 납품','수출 서류 준비, 포워딩사 연계, 국가별 출고']],
+      brT:'Company Profile', brNone:'회사소개서를 준비하고 있습니다.', brOpen:'회사소개서 보기 →',
+      srcK:'Sourcing Agent', srcH:'동대문 여성복 사입대행', srcP:'밤에 열리는 동대문 도매상가에서 원하는 상품을 찾아 대신 사입합니다. 직접 시장에 나오지 않아도 샘플 확인부터 출고까지 진행 상황을 받아보실 수 있습니다.',
+      steps:[['상담 · 요청서','원하는 스타일, 수량, 단가, 납기를 정리합니다.'],['시장조사 · 샘플','도매상가를 돌며 후보 상품과 샘플을 확보합니다.'],['주문 · 사입','확정 상품을 주문하고 미송·입고 일정을 관리합니다.'],['검수 · 포장','수량과 불량을 확인하고 택 작업, 포장을 합니다.'],['출고','국내 택배 또는 해외 포워딩으로 발송합니다.']],
+      forH:'For', forL:['동대문 상품을 판매하는 국내 온라인 쇼핑몰, 셀러','한국 여성복을 수입하는 해외 바이어, 편집숍','소량 테스트 후 공장 생산으로 넘어가려는 브랜드'],
+      mallH:'Wholesale Malls', malls:['디오트','청평화','남평화','APM','누존','테크노'], mallNote:'상가별 영업시간과 휴무일에 맞춰 사입 일정을 잡습니다.',
+      facK:'Partner Factories', facH:'외주 공장', facP:'시장 상품으로 맞추기 어려운 수량과 사양은 협력 공장에서 생산합니다. 실제 작업 현장 사진입니다.',
+      expK:'Export Record', expH:'수출 납품 제품', expP:'위컴퍼니를 통해 해외 바이어에게 납품한 제품입니다.',
+      empty:'사진을 준비하고 있습니다.',
+      conK:'Contact', conH:'사입 · 생산 문의', conP:'원하는 스타일 사진, 수량, 희망 단가와 납기를 함께 보내주시면 빠르게 견적을 드립니다.',
+      lab:{phone:'전화',email:'이메일',kakao:'카카오톡',line:'LINE',hours:'상담 시간',address:'주소'}, pending:'연락처를 준비하고 있습니다.', copy:'Copy', copied:'Copied',
+      heroRow:['Dongdaemun, Seoul','Women’s Wear'], close:'닫기'
+    },
+    ja:{
+      nav:[['about','About'],['sourcing','Sourcing'],['factory','Factory'],['products','Export'],['contact','Contact']],
+      h1:'東大門のレディースウェアを、\n仕入れから生産、輸出まで。',
+      sub:'卸売商街での仕入れ代行、協力工場での生産、海外バイヤーへの納品までを一つの窓口で行います。',
+      ctaContact:'お問い合わせ →', ctaBrochure:'会社案内を見る →',
+      aboutK:'About', aboutH:'会社概要', aboutP:'東大門市場のスピードと、工場生産の安定性を両立します。',
+      biz:[['東大門レディースウェア仕入れ代行','卸売商街の市場調査、サンプル・本発注の仕入れ、入荷待ち商品の管理'],['協力工場での生産（OEM）','サンプルと仕様書に基づく協力工場での生産と品質管理'],['検品・梱包・タグ付け','数量、汚れ、縫製不良を確認し、ご要望に合わせて梱包'],['海外輸出納品','輸出書類の準備、フォワーダー手配、国別の出荷']],
+      brT:'Company Profile', brNone:'会社案内は準備中です。', brOpen:'会社案内を見る →',
+      srcK:'Sourcing Agent', srcH:'東大門レディースウェア仕入れ代行', srcP:'夜に開く東大門の卸売商街で、ご希望の商品を探して代わりに仕入れます。現地に来られなくても、サンプル確認から出荷まで進捗をご報告します。',
+      steps:[['ご相談・依頼書','スタイル、数量、単価、納期を整理します。'],['市場調査・サンプル','卸売商街を回り、候補商品とサンプルを確保します。'],['発注・仕入れ','確定した商品を発注し、入荷スケジュールを管理します。'],['検品・梱包','数量と不良を確認し、タグ付けと梱包を行います。'],['出荷','国内配送または海外フォワーダーで発送します。']],
+      forH:'For', forL:['東大門の商品を扱うオンラインショップ・セラー','韓国レディースウェアを輸入する海外バイヤー・セレクトショップ','小ロットでテストしてから工場生産に移りたいブランド'],
+      mallH:'Wholesale Malls', malls:['DIOT','清平和','南平和','APM','NUZZON','TECHNO'], mallNote:'商街ごとの営業時間と定休日に合わせて仕入れ日程を組みます。',
+      facK:'Partner Factories', facH:'協力工場', facP:'市場の商品では対応しにくい数量や仕様は、協力工場で生産します。実際の作業現場の写真です。',
+      expK:'Export Record', expH:'輸出納品実績', expP:'WE COMPANYを通じて海外バイヤーへ納品した製品です。',
+      empty:'写真は準備中です。',
+      conK:'Contact', conH:'仕入れ・生産のお問い合わせ', conP:'ご希望のスタイル写真、数量、希望単価と納期をお送りいただければ、迅速にお見積もりいたします。',
+      lab:{phone:'電話',email:'メール',kakao:'カカオトーク',line:'LINE',hours:'受付時間',address:'住所'}, pending:'連絡先は準備中です。', copy:'Copy', copied:'Copied',
+      heroRow:['Dongdaemun, Seoul','Women’s Wear'], close:'閉じる'
+    }
+  };
+
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function blob(id){return '/uploads/'+id;}
+  function kb(n){return n>1048576?(n/1048576).toFixed(1)+' MB':Math.max(1,Math.round(n/1024))+' KB';}
+  function cap(it){return lang==='ja'?(it.captionJa||it.caption||''):(it.caption||it.captionJa||'');}
+  function brochure(){return S.brochure[lang]||S.brochure[lang==='ja'?'ko':'ja'];}
+
+  function gallery(key){
+    var t=T[lang], list=S[key];
+    var ed='<div class="ed">'+
+      '<label>설명 (한국어)<input id="up-cap-'+key+'" placeholder="'+(key==='factory'?'예: 봉제 라인':'예: 니트 가디건 2,000pcs')+'"></label>'+
+      '<label>설명 (日本語)<input id="up-capja-'+key+'" placeholder="'+(key==='factory'?'例: 縫製ライン':'例: ニットカーディガン 2,000pcs')+'"></label>'+
+      (key==='products'?'<label>수출국<input id="up-cty" placeholder="JAPAN"></label>':'')+
+      '<input type="file" id="file-'+key+'" accept="image/jpeg,image/png,image/webp,image/gif" multiple hidden>'+
+      '<button class="btn" data-pick="'+key+'">사진 올리기</button><span class="prog" id="prog-'+key+'"></span></div>';
+    if(!list.length) return ed+'<p class="empty">'+t.empty+'</p>';
+    return ed+'<div class="grid '+key+'">'+list.map(function(it,i){
+      return '<figure class="card">'+
+        '<button class="ph" data-zoom="'+key+':'+i+'" aria-label="'+esc(cap(it)||'photo')+'"><img src="'+blob(it.id)+'" alt="'+esc(cap(it))+'" loading="lazy"></button>'+
+        '<figcaption class="cap">'+(cap(it)?'<b>'+esc(cap(it))+'</b>':'')+(key==='products'&&it.country?'<span class="cty">'+esc(it.country)+'</span>':'')+'</figcaption>'+
+        '<div class="tools">'+
+          '<input id="c-'+key+'-'+i+'" data-f="caption" data-k="'+key+':'+i+'" value="'+esc(it.caption||'')+'" placeholder="설명 (한국어)">'+
+          '<input id="j-'+key+'-'+i+'" data-f="captionJa" data-k="'+key+':'+i+'" value="'+esc(it.captionJa||'')+'" placeholder="説明 (日本語)">'+
+          (key==='products'?'<input id="y-'+key+'-'+i+'" data-f="country" data-k="'+key+':'+i+'" value="'+esc(it.country||'')+'" placeholder="수출국 (JAPAN)">':'')+
+          '<div class="b"><button class="btn line" data-move="'+key+':'+i+'">← 앞으로</button>'+
+          '<button class="btn line" data-hero="'+it.id+'">대표 이미지로</button>'+
+          '<button class="btn warn" data-del="'+key+':'+i+'">삭제</button></div>'+
+        '</div></figure>';
+    }).join('')+'</div>';
+  }
+
+  function contact(){
+    var t=T[lang], I=S.info, L=I[lang];
+    var rows=[['phone',I.phone],['email',I.email],['line',I.line],['kakao',I.kakao],['hours',L.hours],['address',L.address]];
+    if(lang==='ko') rows=[rows[0],rows[1],rows[3],rows[2],rows[4],rows[5]];
+    var html=rows.filter(function(r){return r[1]&&String(r[1]).trim();}).map(function(r){
+      return '<div class="rowc"><span class="k">'+t.lab[r[0]]+'</span><span class="v">'+esc(r[1])+'</span><button class="copy" data-copy="'+esc(r[1])+'">'+t.copy+'</button></div>';
+    }).join('');
+    return '<div class="rows">'+(html||'<p class="pending">'+t.pending+'</p>')+'</div>';
+  }
+
+  function render(){
+    var t=T[lang], I=S.info, L=I[lang], b=brochure();
+    document.documentElement.lang=lang;
+    var localName = lang==='ja'?I.nameJa:I.name;
+    document.getElementById('app').innerHTML =
+    '<div class="frame">'+
+    '<aside class="side">'+
+      '<button class="logo" data-go="top">'+esc(I.nameEn)+'<small>'+esc(localName)+'</small></button>'+
+      '<div class="menus"><nav aria-label="menu">'+t.nav.map(function(n){return '<button data-go="'+n[0]+'">'+n[1]+'</button>';}).join('')+'</nav>'+
+      '<nav class="lang" aria-label="language"><button data-lang="ko" aria-pressed="'+(lang==='ko')+'">KO</button><button data-lang="ja" aria-pressed="'+(lang==='ja')+'">JP</button></nav></div>'+
+      '<div class="side-foot"><div><b>'+esc(L.tagline)+'</b></div>'+(I.email?'<div>'+esc(I.email)+'</div>':'')+'</div>'+
+    '</aside>'+
+    '<main class="main" id="top">'+
+
+    '<section class="hero">'+
+      '<div class="hero-media">'+(S.hero?'<img src="'+blob(S.hero)+'" alt="">':
+        '<div class="hero-type"><div class="row"><span>'+t.heroRow[0]+'</span><span>'+t.heroRow[1]+'</span></div><div class="big">Sourcing,<br>OEM,<br>Export</div></div>')+'</div>'+
+      '<div class="ed" style="margin-top:12px"><span style="font-size:12px;color:var(--muted)">대표 이미지: 아래 사진의 "대표 이미지로" 버튼을 누르거나 직접 올리세요.</span>'+
+        '<input type="file" id="file-hero" accept="image/jpeg,image/png,image/webp" hidden><button class="btn" data-pick="hero">대표 이미지 올리기</button>'+
+        (S.hero?'<button class="btn line" data-hero="">기본 문구로 되돌리기</button>':'')+'<span class="prog" id="prog-hero"></span></div>'+
+      '<div class="hero-text"><h1>'+esc(t.h1)+'</h1><p class="sub">'+esc(t.sub)+'</p>'+
+        '<div class="acts"><button class="link" data-go="contact">'+t.ctaContact+'</button>'+(b?'<a class="link" href="'+blob(b.id)+'" target="_blank" rel="noopener">'+t.ctaBrochure+'</a>':'')+'</div></div>'+
+    '</section>'+
+
+    '<section class="sec" id="about">'+
+      '<div class="sec-h"><div><div class="kicker">'+t.aboutK+'</div><h2>'+t.aboutH+'</h2></div><p>'+t.aboutP+'</p></div>'+
+      '<div class="two"><div><p class="intro">'+esc(L.intro)+'</p>'+
+        '<div class="notice"><div class="t">'+t.brT+'</div>'+
+          '<div class="d">'+(b?esc(b.name)+' · '+kb(b.size):t.brNone)+'</div>'+
+          '<div class="acts">'+(b?'<a class="link" href="'+blob(b.id)+'" target="_blank" rel="noopener">'+t.brOpen+'</a>':'')+
+            '<input type="file" id="file-br-ko" accept="application/pdf,image/jpeg,image/png" hidden><input type="file" id="file-br-ja" accept="application/pdf,image/jpeg,image/png" hidden>'+
+            '<span class="ed" style="margin:0;padding:0;border:0;background:none"><button class="btn line" data-pick="br-ko">한국어 소개서 '+(S.brochure.ko?'교체':'올리기')+'</button><button class="btn line" data-pick="br-ja">日本語 소개서 '+(S.brochure.ja?'교체':'올리기')+'</button></span>'+
+            '<span class="prog" id="prog-br"></span></div></div></div>'+
+        '<ol class="list">'+t.biz.map(function(x,i){return '<li><span class="n">0'+(i+1)+'</span><div><b>'+x[0]+'</b><span>'+x[1]+'</span></div></li>';}).join('')+'</ol></div>'+
+      '<div class="ed ed-grid" id="info-form">'+
+        '<div class="head">회사 정보 편집</div>'+
+        '<label>회사명 (한국어)<input id="f-name" value="'+esc(I.name)+'"></label>'+
+        '<label>회사명 (日本語)<input id="f-nameJa" value="'+esc(I.nameJa)+'"></label>'+
+        '<label class="full">영문명 (로고)<input id="f-nameEn" value="'+esc(I.nameEn)+'"></label>'+
+        '<label>한 줄 소개 (한국어)<input id="f-ko-tagline" value="'+esc(I.ko.tagline)+'"></label>'+
+        '<label>한 줄 소개 (日本語)<input id="f-ja-tagline" value="'+esc(I.ja.tagline)+'"></label>'+
+        '<label>회사 소개 (한국어)<textarea id="f-ko-intro">'+esc(I.ko.intro)+'</textarea></label>'+
+        '<label>회사 소개 (日本語)<textarea id="f-ja-intro">'+esc(I.ja.intro)+'</textarea></label>'+
+        '<label>전화<input id="f-phone" value="'+esc(I.phone)+'" placeholder="+82-10-0000-0000"></label>'+
+        '<label>이메일<input id="f-email" value="'+esc(I.email)+'"></label>'+
+        '<label>카카오톡 ID<input id="f-kakao" value="'+esc(I.kakao)+'"></label>'+
+        '<label>LINE ID<input id="f-line" value="'+esc(I.line)+'"></label>'+
+        '<label>상담 시간 (한국어)<input id="f-ko-hours" value="'+esc(I.ko.hours)+'" placeholder="평일 10:00–19:00"></label>'+
+        '<label>受付時間 (日本語)<input id="f-ja-hours" value="'+esc(I.ja.hours)+'" placeholder="平日 10:00–19:00（韓国時間）"></label>'+
+        '<label>주소 (한국어)<input id="f-ko-address" value="'+esc(I.ko.address)+'"></label>'+
+        '<label>住所 (日本語)<input id="f-ja-address" value="'+esc(I.ja.address)+'"></label>'+
+      '</div>'+
+    '</section>'+
+
+    '<section class="sec" id="sourcing">'+
+      '<div class="sec-h"><div><div class="kicker">'+t.srcK+'</div><h2>'+t.srcH+'</h2></div><p>'+t.srcP+'</p></div>'+
+      '<ol class="steps">'+t.steps.map(function(s,i){return '<li><span class="n">0'+(i+1)+'</span><b>'+s[0]+'</b><span>'+s[1]+'</span></li>';}).join('')+'</ol>'+
+      '<div class="two" style="margin-top:44px"><div><div class="sub-h">'+t.forH+'</div><ul class="plain">'+t.forL.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>'+
+      '<div><div class="sub-h">'+t.mallH+'</div><p class="malls">'+t.malls.map(function(m){return '<span>'+m+'</span>';}).join('')+'</p><p class="note">'+t.mallNote+'</p></div></div>'+
+    '</section>'+
+
+    '<section class="sec" id="factory"><div class="sec-h"><div><div class="kicker">'+t.facK+'</div><h2>'+t.facH+'</h2></div><p>'+t.facP+'</p></div>'+gallery('factory')+'</section>'+
+    '<section class="sec" id="products"><div class="sec-h"><div><div class="kicker">'+t.expK+'</div><h2>'+t.expH+'</h2></div><p>'+t.expP+'</p></div>'+gallery('products')+'</section>'+
+
+    '<section class="sec" id="contact"><div class="sec-h"><div><div class="kicker">'+t.conK+'</div><h2>'+t.conH+'</h2></div><p>'+t.conP+'</p></div>'+contact()+'</section>'+
+    '<footer><span>© '+esc(I.nameEn)+'</span><span>Dongdaemun Women’s Wear · Sourcing, OEM, Export</span></footer>'+
+    '</main></div>'+
+    (artifact?'<div class="adminbar"><span class="status" id="status">'+(saving?'저장 중…':dirty?'저장하지 않은 변경 사항이 있습니다':editing?'편집 중 · '+(lang==='ja'?'일본어 화면':'한국어 화면'):'관리자')+'</span>'+
+      (editing?'<button class="btn" id="save" '+(dirty&&!saving?'':'disabled')+'>저장하고 게시</button><button class="btn line" id="toggle">편집 끝내기</button>':'<button class="btn" id="toggle">편집하기</button><button class="btn line" id="logout">로그아웃</button>')+
+    '</div>':'');
+    document.body.classList.toggle('editing',editing);
+  }
+
+  function setDirty(){dirty=true;var s=document.getElementById('save');if(s)s.disabled=saving;var t=document.getElementById('status');if(t)t.textContent='저장하지 않은 변경 사항이 있습니다';}
+  function status(m){var t=document.getElementById('status');if(t)t.textContent=m;}
+
+  function readForm(){
+    if(!document.getElementById('f-name')) return;
+    var I=S.info;
+    ['name','nameJa','nameEn','phone','email','kakao','line'].forEach(function(k){I[k]=document.getElementById('f-'+k).value;});
+    ['ko','ja'].forEach(function(l){['tagline','intro','hours','address'].forEach(function(k){I[l][k]=document.getElementById('f-'+l+'-'+k).value;});});
+    document.querySelectorAll('[data-k][data-f]').forEach(function(el){var p=el.dataset.k.split(':');var it=S[p[0]][+p[1]];if(it)it[el.dataset.f]=el.value;});
+  }
+
+  function prep(file){
+    if(!/^image\/(jpeg|png|webp)$/.test(file.type)||!window.createImageBitmap) return Promise.resolve(file);
+    return createImageBitmap(file).then(function(bmp){
+      var max=2400,w=bmp.width,h=bmp.height,r=Math.min(1,max/Math.max(w,h));
+      if(r===1&&file.size<3*1048576) return file;
+      var c=document.createElement('canvas');c.width=Math.round(w*r);c.height=Math.round(h*r);
+      c.getContext('2d').drawImage(bmp,0,0,c.width,c.height);
+      return new Promise(function(res){c.toBlob(function(b){res(b||file);},'image/jpeg',0.86);});
+    }).catch(function(){return file;});
+  }
+  function errMsg(e){var c=e&&e.code;
+    if(c==='too_large')return '파일이 너무 큽니다 (최대 20MB).';
+    if(c==='unsupported_type')return 'JPG, PNG, WEBP, GIF 사진 또는 PDF만 올릴 수 있습니다.';
+    if(c==='quota_or_state')return '저장 공간이 가득 찼습니다. 사용하지 않는 사진을 삭제해 주세요.';
+    if(c==='rate_limited')return '잠시 후 다시 시도해 주세요.';
+    return '업로드하지 못했습니다. 다시 시도해 주세요.';}
+  function done(id,msg){render();var p=document.getElementById(id);if(p)p.textContent=msg;}
+
+  function uploadFiles(key,files){
+    readForm();
+    var v=function(id){var el=document.getElementById(id);return el?el.value:'';};
+    var c1=v('up-cap-'+key),c2=v('up-capja-'+key),cty=key==='products'?v('up-cty'):'';
+    var list=[].slice.call(files),n=0,failed='',prog=document.getElementById('prog-'+key);
+    if(prog)prog.textContent='올리는 중… 0/'+list.length;
+    list.reduce(function(p,f){
+      return p.then(function(){return prep(f);}).then(function(b){return assets.upload(b,{type:b.type||f.type});})
+       .then(function(r){S[key].push({id:r.id,caption:c1,captionJa:c2,country:cty});dirty=true;})
+       .catch(function(e){failed=errMsg(e);})
+       .then(function(){n++;if(prog)prog.textContent='올리는 중… '+n+'/'+list.length;});
+    },Promise.resolve()).then(function(){done('prog-'+key,failed||'올렸습니다. "저장하고 게시"를 눌러 반영하세요.');});
+  }
+  function uploadHero(f){
+    readForm();var prog=document.getElementById('prog-hero');if(prog)prog.textContent='올리는 중…';
+    prep(f).then(function(b){return assets.upload(b,{type:b.type||f.type});}).then(function(r){
+      if(S.hero&&!inGallery(S.hero))removed.push(S.hero);S.hero=r.id;dirty=true;done('prog-hero','올렸습니다. 저장하고 게시하세요.');
+    }).catch(function(e){if(prog)prog.textContent=errMsg(e);});
+  }
+  function uploadBrochure(l,f){
+    readForm();var prog=document.getElementById('prog-br');if(prog)prog.textContent='올리는 중…';
+    assets.upload(f,{type:f.type||'application/pdf'}).then(function(r){
+      if(S.brochure[l])removed.push(S.brochure[l].id);
+      S.brochure[l]={id:r.id,name:f.name,size:r.sizeBytes,type:r.contentType};dirty=true;
+      done('prog-br',(l==='ja'?'일본어':'한국어')+' 소개서를 올렸습니다. 저장하고 게시하세요.');
+    }).catch(function(e){if(prog)prog.textContent=errMsg(e);});
+  }
+  function inGallery(id){return S.factory.concat(S.products).some(function(x){return x.id===id;});}
+
+  function save(){
+    if(saving)return;readForm();saving=true;render();
+    var gone=removed.filter(function(id){return id!==S.hero&&!inGallery(id);});
+    api('PUT','/api/site',S).then(function(){
+      dirty=false;saving=false;removed=[];gone.forEach(function(id){assets.delete(id).catch(function(){});});
+      render();status('저장했습니다. 사이트에 반영되었습니다.');
+    }).catch(function(e){saving=false;render();status(e&&e.code==='unauthorized'?'로그인이 만료되었습니다. /admin 에서 다시 로그인해 주세요.':'저장하지 못했습니다. 다시 눌러 주세요.');});
+  }
+
+  function setLang(l){
+    readForm(); lang=l; try{localStorage.setItem('wc-lang',l);}catch(_){}
+    if(location.hash!=='#'+l){ location.hash=l; } else render();
+  }
+  window.addEventListener('hashchange',function(){var l=location.hash==='#ja'?'ja':location.hash==='#ko'?'ko':null;if(l&&l!==lang){readForm();lang=l;}render();});
+
+  document.addEventListener('input',function(e){if(e.target.closest('#info-form')||e.target.matches('[data-f]'))setDirty();});
+  document.addEventListener('change',function(e){var t=e.target;if(!t.files||!t.files.length)return;
+    if(t.id==='file-factory')uploadFiles('factory',t.files);
+    else if(t.id==='file-products')uploadFiles('products',t.files);
+    else if(t.id==='file-hero')uploadHero(t.files[0]);
+    else if(t.id==='file-br-ko')uploadBrochure('ko',t.files[0]);
+    else if(t.id==='file-br-ja')uploadBrochure('ja',t.files[0]);
+  });
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('button');if(!t)return;var d=t.dataset;
+    if(d.go){var el=document.getElementById(d.go);if(el)el.scrollIntoView({block:'start'});return;}
+    if(d.lang){setLang(d.lang);return;}
+    if(t.id==='toggle'){readForm();editing=!editing;render();return;}
+    if(t.id==='save'){save();return;}
+    if(t.id==='logout'){api('POST','/api/logout').then(function(){location.href='/';});return;}
+    if(d.copy!=null){var lb=T[lang];
+      try{navigator.clipboard.writeText(d.copy).then(function(){t.textContent=lb.copied;setTimeout(function(){t.textContent=lb.copy;},1500);},function(){sel(t);});}catch(_){sel(t);}return;}
+    if(d.pick){if(!assets){status('관리자 로그인 후 올릴 수 있습니다.');return;}document.getElementById('file-'+d.pick).click();return;}
+    if(d.hero!=null){readForm();if(S.hero&&!inGallery(S.hero))removed.push(S.hero);S.hero=d.hero||null;dirty=true;render();return;}
+    if(d.del){readForm();var p=d.del.split(':'),it=S[p[0]][+p[1]];
+      if(d.armed){S[p[0]].splice(+p[1],1);if(S.hero===it.id)S.hero=null;removed.push(it.id);dirty=true;render();}
+      else{d.armed='1';t.textContent='한 번 더 누르면 삭제';}return;}
+    if(d.move){readForm();var m=d.move.split(':'),a=S[m[0]],i=+m[1];if(i>0){var x=a[i];a[i]=a[i-1];a[i-1]=x;dirty=true;render();}return;}
+    if(d.zoom){var z=d.zoom.split(':'),item=S[z[0]][+z[1]];
+      var box=document.createElement('div');box.className='lb';box.setAttribute('role','dialog');
+      box.innerHTML='<button type="button" class="x" aria-label="'+T[lang].close+'">×</button><img src="'+blob(item.id)+'" alt=""><p>'+esc(cap(item)+(item.country?' · '+item.country:''))+'</p>';
+      box.addEventListener('click',function(ev){if(ev.target.tagName!=='IMG')box.remove();});
+      document.body.appendChild(box);box.querySelector('.x').focus();}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){var b=document.querySelector('.lb');if(b)b.remove();}});
+  function sel(btn){var v=btn.previousElementSibling,r=document.createRange();r.selectNodeContents(v);var s=getSelection();s.removeAllRanges();s.addRange(r);}
+  window.addEventListener('beforeunload',function(e){if(dirty&&!saving){e.preventDefault();e.returnValue='';}});
+
+  function api(method,url,body){
+    var o={method:method,credentials:'same-origin',headers:{}};
+    if(body instanceof FormData)o.body=body;else if(body!==undefined){o.headers['Content-Type']='application/json';o.body=JSON.stringify(body);}
+    return fetch(url,o).then(function(r){return r.json().catch(function(){return {};}).then(function(j){
+      if(!r.ok){var e=new Error(j.error||r.statusText);e.code=j.code||(r.status===401?'unauthorized':r.status===413?'too_large':'upstream_error');throw e;}return j;});});
+  }
+  var adminApi={
+    upload:function(b,opts){var type=(opts&&opts.type)||b.type;var fd=new FormData();
+      fd.append('file',b.type===type?b:new Blob([b],{type:type}),b.name||('upload.'+(type.split('/')[1]||'bin')));return api('POST','/api/upload',fd);},
+    delete:function(id){return api('DELETE','/api/upload/'+encodeURIComponent(id));}
+  };
+
+  render();
+  api('GET','/api/me').then(function(me){
+    if(me&&me.admin){artifact=true;assets=adminApi;editing=/[?&]edit(=|&|$)/.test(location.search);render();}
+  }).catch(function(){});
+})();
+</script>
+
+</body>
+</html>

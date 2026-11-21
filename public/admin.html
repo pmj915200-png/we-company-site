@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>관리자 로그인 · WE COMPANY</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400&family=Noto+Sans+KR:wght@300;400&display=swap">
+<style>
+:root{--bg:#e8e8e0;--panel:#f5f2ea;--ink:#111110;--muted:#6b6b64;--soft:#a3a39b;--alert:#a22525}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--ink);font:300 14px/1.7 "Noto Sans KR",sans-serif;padding:16px}
+form{width:min(360px,100%);background:var(--panel);border:1px solid var(--soft);padding:28px;display:grid;gap:14px}
+h1{margin:0;font:400 30px/1 "Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase}
+label{display:grid;gap:4px;font-size:12px;color:var(--muted)}
+input{border:1px solid var(--soft);background:#fff;padding:9px 10px;font:inherit;color:var(--ink)}
+button{border:1px solid var(--ink);background:var(--ink);color:var(--bg);padding:10px;font:inherit;letter-spacing:.04em;cursor:pointer}
+#msg{min-height:1.2em;font-size:12px;color:var(--alert);margin:0}
+a{color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<form id="f">
+  <h1>WE COMPANY</h1>
+  <label for="pw">관리자 비밀번호<input id="pw" type="password" autocomplete="current-password" required></label>
+  <button type="submit">로그인</button>
+  <p id="msg"></p>
+  <a href="/">← 사이트로 돌아가기</a>
+</form>
+<script>
+document.getElementById('f').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var msg = document.getElementById('msg'); msg.textContent = '';
+  fetch('/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin',
+    body: JSON.stringify({ password: document.getElementById('pw').value }) })
+    .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw j; location.href = '/?edit'; }); })
+    .catch(function (j) { msg.textContent = (j && j.error) || '로그인하지 못했습니다.'; });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "wecompany-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "위컴퍼니(WE COMPANY) 회사 소개 사이트 - 한국어/일본어, 관리자 업로드",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "multer": "2.0.2"
+  }
+}
