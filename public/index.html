@@ -262,7 +262,7 @@ body.editing .card .tools{display:flex}
     document.getElementById('app').innerHTML =
     '<div class="frame">'+
     '<aside class="side">'+
-      '<button class="logo" data-go="top">'+esc(I.nameEn)+'<small>'+esc(localName)+'</small></button>'+
+      '<button class="logo" data-go="top">'+esc(I.nameEn)+'<small>'+esc(localName)+'.</small></button>'+
       '<div class="menus"><nav aria-label="menu">'+t.nav.map(function(n){return '<button data-go="'+n[0]+'">'+n[1]+'</button>';}).join('')+'</nav>'+
       '<nav class="lang" aria-label="language"><button data-lang="ko" aria-pressed="'+(lang==='ko')+'">KO</button><button data-lang="ja" aria-pressed="'+(lang==='ja')+'">JP</button></nav></div>'+
       '<div class="side-foot"><div><b>'+esc(L.tagline)+'</b></div>'+(I.email?'<div>'+esc(I.email)+'</div>':'')+'</div>'+
