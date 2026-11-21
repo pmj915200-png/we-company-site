@@ -25,6 +25,43 @@
     "ko": null,
     "ja": null
   },
-  "factory": [],
+  "factory": [
+    {
+      "id": "a2731f6d14d4067415177ed145d0beb5.jpg",
+      "caption": "공장 외관",
+      "captionJa": "工場外観",
+      "country": ""
+    },
+    {
+      "id": "5fc64d1fb3a64e69316fb034dcb58727.jpg",
+      "caption": "원단 재단 준비",
+      "captionJa": "生地の裁断準備",
+      "country": ""
+    },
+    {
+      "id": "346eb6cd95dc40e29baa3cce4e3e517e.jpg",
+      "caption": "봉제 라인",
+      "captionJa": "縫製ライン",
+      "country": ""
+    },
+    {
+      "id": "7601b144e190e2f6055a75768ab48045.jpg",
+      "caption": "완성 검수 작업",
+      "captionJa": "仕上げ・検品作業",
+      "country": ""
+    },
+    {
+      "id": "9bfe239d39009d33f524a01b389ade6f.jpg",
+      "caption": "실밥·먼지 제거 설비",
+      "captionJa": "糸くず・ほこり除去設備",
+      "country": ""
+    },
+    {
+      "id": "5355a26016e1dc1866d2e704a3290ab2.jpg",
+      "caption": "출고 대기 완제품",
+      "captionJa": "出荷待ちの製品",
+      "country": ""
+    }
+  ],
   "products": []
 }

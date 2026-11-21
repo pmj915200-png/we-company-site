@@ -28,6 +28,27 @@ function writeSite(data) {
   fs.renameSync(tmp, SITE_FILE);
 }
 
+// Photos bundled in the repo (seed/uploads) are copied into the data folder,
+// and the default factory gallery is added once to a site that has none yet.
+// After that the admin page owns the list, so deleted photos are not re-added.
+(function seed() {
+  const SEED_DIR = path.join(__dirname, 'seed', 'uploads');
+  if (fs.existsSync(SEED_DIR)) {
+    for (const f of fs.readdirSync(SEED_DIR)) {
+      const dst = path.join(UPLOAD_DIR, f);
+      if (!fs.existsSync(dst)) fs.copyFileSync(path.join(SEED_DIR, f), dst);
+    }
+  }
+  const site = readSite();
+  const def = JSON.parse(fs.readFileSync(path.join(__dirname, 'default-site.json'), 'utf8'));
+  site.seeded = site.seeded || {};
+  if (!site.seeded.factory) {
+    if (!Array.isArray(site.factory) || !site.factory.length) site.factory = def.factory || [];
+    site.seeded.factory = true;
+    writeSite(site);
+  }
+})();
+
 // ---- admin session (signed cookie, no extra dependencies) ----
 function sign(v) { return crypto.createHmac('sha256', SECRET).update(v).digest('hex'); }
 function makeToken() { const exp = Date.now() + SESSION_DAYS * 864e5; return exp + '.' + sign('admin:' + exp); }

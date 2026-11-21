@@ -13,7 +13,8 @@
 | `server.js` | Express 서버. 페이지 제공, 관리자 로그인, 업로드, 저장 API |
 | `public/index.html` | 사이트 화면 (디자인, 한국어/일본어 문구, 편집 UI) |
 | `public/admin.html` | 관리자 로그인 화면 |
-| `default-site.json` | 처음 실행할 때 쓰는 기본 문구 |
+| `default-site.json` | 처음 실행할 때 쓰는 기본 문구와 기본 공장 사진 목록 |
+| `seed/uploads/` | 기본 외주 공장 사진. 서버 시작 시 데이터 폴더로 복사되고, 공장 사진이 비어 있는 사이트에 한 번만 추가됩니다 |
 | `DATA_DIR/site.json` | 저장된 회사 정보와 사진 목록 (실행 중 생성) |
 | `DATA_DIR/uploads/` | 올린 사진과 PDF (실행 중 생성) |
 
